@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+set -e
+
+brew install memcached
+brew services install memcached

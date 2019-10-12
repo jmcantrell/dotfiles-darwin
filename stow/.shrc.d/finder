@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+# change directory to current folder in finder
+cdf()
+{
+    cd "`pfd`"
+}

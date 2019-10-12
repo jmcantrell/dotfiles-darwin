@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+set -e
+
+brew cask install spectacle the-unarchiver

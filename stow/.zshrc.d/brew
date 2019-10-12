@@ -1,0 +1,3 @@
+#!/usr/bin/env zsh
+
+HELPDIR=/usr/local/share/zsh/help

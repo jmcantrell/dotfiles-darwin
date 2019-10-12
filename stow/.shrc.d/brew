@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+# install packages
+alias brewi='brew install'
+
+# search for packages
+alias brews='brew search'
+
+# upgrade packages
+alias brewup='brew update; brew upgrade'
+
+# remove packages
+alias brewrm='brew uninstall'
+
+# show package info
+alias brewsh='brew info'

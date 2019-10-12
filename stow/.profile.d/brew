@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+# path where homebrew is installed, usually /usr/local
+brew=`brew --prefix`
+
+# man pages from homebrew
+export MANPATH=$brew/share/man:$MANPATH
+
+# use zsh completions from brew
+export FPATH=$brew/share/zsh-completions:$FPATH
+
+# prefer gnu coreutils over bsd for consistency
+export PATH=$brew/opt/coreutils/libexec/gnubin:$PATH
+export MANPATH=$brew/opt/coreutils/libexec/gnuman:$MANPATH

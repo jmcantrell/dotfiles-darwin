@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+
+# Opens the current (or given) directory in finder.
+
+# if no dir given, use current dir
+dir=$1; test -e "$dir" || dir=$PWD
+
+osascript<<EOF
+set thePath to POSIX file "$dir" as alias
+tell application "Finder"
+    activate
+    try
+        set the folder of the front window to thePath
+    on error
+        open thePath
+    end try
+end tell
+EOF
