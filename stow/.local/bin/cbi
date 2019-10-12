@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+# Command abstraction for copying text to clipboard.
+
+copy() {
+    # copy to primary selection and clipboard
+    pbcopy
+}
+
+if test $# -gt 0; then
+    # copy arguments passed
+    echo "$@" | copy
+else
+    # otherwise copy stdin
+    copy
+fi
