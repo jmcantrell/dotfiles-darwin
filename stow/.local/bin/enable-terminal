@@ -7,6 +7,6 @@ brew install \
     zsh zsh-completions \
     curl lynx wget whois newsboat \
     vim words aspell git stow direnv \
-    tmux ranger trash tree pstree \
+    tmux ranger trash tree pstree ncdu \
     atool socat wget fswatch watch \
     coreutils moreutils dateutils findutils renameutils
