@@ -68,5 +68,9 @@ if groups | grep -wq admin; then
 
 fi
 
+# ca certs can be in different places, so link to a common place
+mkdir -p ~/.local/etc/ssl/certs
+ln -sfv /usr/local/etc/openssl/cert.pem ~/.local/etc/ssl/certs/ca-certificates.crt
+
 # change shell to zsh
 test ${SHELL##*/} = zsh || chsh -s /usr/local/bin/zsh
