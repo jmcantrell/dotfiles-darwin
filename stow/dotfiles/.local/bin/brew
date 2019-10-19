@@ -1,7 +1,33 @@
 #!/usr/bin/env sh
 
-# Wrapper for `brew` that ensures PATH is correct.
+# Wrapper for `brew` that ensures PATH and MANPATH are correct.
 
+# If system tools like coreutils are overridden in the current shell,
+# homebrew will not have access to the expected versions, and some
+# builds will supposedly fail.
+
+# The BSD coreutils that ship with MacOS are somewhat different from GNU
+# coreutils. Homebrew installs them in /usr/local/bin with a "g" prefix.
+
+# The following paths can be added to the front of PATH and MANPATH,
+# respectively, to give the user access to the unprefixed versions:
+
+# /usr/local/opt/coreutils/libexec/gnubin
+# /usr/local/opt/coreutils/libexec/gnuman
+
+# If this is done, `brew doctor` will complain that it does not have
+# access to the expected BSD versions. In order for the user to have
+# easy access to GNU coreutils and also allow homebrew to see BSD
+# coreutils, this wrapper will set the system default for PATH and
+# MANPATH during the execution of any homebrew command. The outer
+# shell's path will not be affected.
+
+# Since path_helper takes the current value into account,
+# unset PATH and MANPATH first to get the default value.
+export PATH=
+export MANPATH=
+
+# Takes values from /etc/paths and /etc/paths.d/*
 eval `/usr/libexec/path_helper -s`
 
 /usr/local/bin/brew "$@"
