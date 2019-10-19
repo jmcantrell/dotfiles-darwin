@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+# Wrapper for `brew` that ensures PATH is correct.
+
+eval `/usr/libexec/path_helper -s`
+
+/usr/local/bin/brew "$@"
