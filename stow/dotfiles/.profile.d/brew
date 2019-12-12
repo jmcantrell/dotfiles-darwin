@@ -9,6 +9,13 @@ export MANPATH=$brew/share/man:$MANPATH
 # use zsh completions from brew
 export FPATH=$brew/share/zsh-completions:$FPATH
 
-# prefer gnu coreutils over bsd for consistency
+# prefer gnu coreutils for consistency
 export PATH=$brew/opt/coreutils/libexec/gnubin:$PATH
 export MANPATH=$brew/opt/coreutils/libexec/gnuman:$MANPATH
+
+# ... and same for gnu sed
+export PATH=$brew/opt/gnu-sed/libexec/gnubin:$PATH
+export MANPATH=$brew/opt/gnu-sed/libexec/gnuman:$MANPATH
+
+# unversioned symlinks for python tools
+export PATH=$brew/opt/python/libexec/bin:$PATH
