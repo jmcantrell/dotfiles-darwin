@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # path where homebrew is installed, usually /usr/local
-brew=`brew --prefix`
+brew=$(brew --prefix)
 
 # man pages from homebrew
 export MANPATH=$brew/share/man:$MANPATH
@@ -19,3 +19,8 @@ export MANPATH=$brew/opt/gnu-sed/libexec/gnuman:$MANPATH
 
 # unversioned symlinks for python tools
 export PATH=$brew/opt/python/libexec/bin:$PATH
+
+# tell compilers where to find openssl
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl/include"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
