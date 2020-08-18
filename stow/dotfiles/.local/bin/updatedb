@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+# ensure the default mac coreutils are preferred
+export PATH=/usr/bin:$PATH
+
+sudo /usr/libexec/locate.updatedb
