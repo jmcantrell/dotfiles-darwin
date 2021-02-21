@@ -1,7 +1,0 @@
-#!/usr/bin/env sh
-
-export NVM_DIR=~/.nvm
-export NODE_VERSION_PREFIX=
-export NODE_VERSIONS=$NVM_DIR/versions/node
-
-. /usr/local/opt/nvm/nvm.sh

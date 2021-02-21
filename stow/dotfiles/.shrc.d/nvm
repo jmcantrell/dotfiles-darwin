@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+. /usr/local/opt/nvm/nvm.sh
+
