@@ -1,5 +1,3 @@
-#!/usr/bin/env sh
-
 # install packages
 alias brewi='brew install'
 
@@ -14,3 +12,5 @@ alias brewrm='brew uninstall'
 
 # show package info
 alias brewsh='brew info'
+
+# vi:ft=sh

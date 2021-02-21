@@ -1,7 +1,7 @@
-#!/usr/bin/env sh
-
 # change directory to current folder in finder
 cdf()
 {
-    cd "`pfd`"
+    cd "$(pfd)" || return 0
 }
+
+# vi:ft=sh
