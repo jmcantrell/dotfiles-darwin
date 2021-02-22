@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 # Wrapper for `brew` that ensures PATH and MANPATH are correct.
 
@@ -28,6 +28,6 @@ export PATH=
 export MANPATH=
 
 # Takes values from /etc/paths and /etc/paths.d/*
-eval `/usr/libexec/path_helper -s`
+eval "$(/usr/libexec/path_helper -s)"
 
 /usr/local/bin/brew "$@"

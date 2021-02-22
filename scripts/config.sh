@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 set -e
 
@@ -47,24 +47,27 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 # unhide library folder in finder
-chflags nohidden "$HOME/Library"
+chflags nohidden ~/Library
 
 # only if allowed to use sudo
 if groups | grep -wq admin; then
 
-    # disable boot sound
-    sudo nvram SystemAudioVolume=" "
+	# disable boot sound
+	sudo nvram SystemAudioVolume=" "
 
-    # power management settings
-    sudo pmset -b sleep 1
-    sudo pmset -c sleep 15
-    sudo pmset -b displaysleep 1
-    sudo pmset -c displaysleep 15
+	# power management settings
+	sudo pmset -b sleep 1
+	sudo pmset -c sleep 15
+	sudo pmset -b displaysleep 1
+	sudo pmset -c displaysleep 15
 
-    # add brew installed shells to system
-    if ! grep -q /usr/local/bin /etc/shells; then
-        sudo echo -e "/usr/local/bin/bash\n/usr/local/bin/zsh" >>/etc/shells
-    fi
+	# add brew installed shells to system
+	if ! grep -q /usr/local/bin /etc/shells; then
+		{
+			echo "/usr/local/bin/bash"
+			echo "/usr/local/bin/zsh"
+		} | sudo tee -a /etc/shells
+	fi
 
 fi
 
@@ -73,4 +76,4 @@ mkdir -p ~/.local/etc/ssl/certs
 ln -sfv /usr/local/etc/openssl/cert.pem ~/.local/etc/ssl/certs/ca-certificates.crt
 
 # change shell to zsh
-test ${SHELL##*/} = zsh || chsh -s /usr/local/bin/zsh
+[[ ${SHELL##*/} = zsh ]] || chsh -s /usr/local/bin/zsh

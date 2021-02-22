@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-
-set -e
-
-brew install mysql
-brew services start mysql

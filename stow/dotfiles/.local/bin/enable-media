@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-
-set -e
-
-brew install ffmpeg gifsicle
-brew cask install mplayerx vlc transmission
