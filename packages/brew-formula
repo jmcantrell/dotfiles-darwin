@@ -10,6 +10,7 @@ ctags
 dateutils
 deno
 direnv
+exa
 ffmpeg
 findutils
 fswatch
