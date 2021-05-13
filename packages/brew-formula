@@ -55,6 +55,7 @@ shellcheck
 socat
 sqlite
 stow
+tldr
 tmux
 trash
 tree
