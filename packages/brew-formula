@@ -11,6 +11,7 @@ ctags
 dateutils
 deno
 direnv
+entr
 exa
 ffmpeg
 findutils
