@@ -11,10 +11,12 @@ ctags
 dateutils
 deno
 direnv
+djvulibre
 docker
 entr
 exa
 ffmpeg
+ffmpegthumbnailer
 findutils
 fswatch
 gawk
@@ -30,6 +32,7 @@ heroku
 highlight
 imagemagick
 jq
+libcaca
 lua
 markdown
 mkcert
@@ -39,6 +42,7 @@ moreutils
 neovim
 newsboat
 node
+odt2txt
 pandoc
 patchutils
 pgformatter
@@ -60,6 +64,7 @@ sqlite
 stow
 tldr
 tmux
+transmission-cli
 trash
 tree
 watch
