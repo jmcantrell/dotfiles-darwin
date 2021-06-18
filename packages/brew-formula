@@ -26,6 +26,7 @@ ghostscript
 gifsicle
 git
 git-archive-all
+git-delta
 git-gui
 gnupg
 go
@@ -46,6 +47,7 @@ newsboat
 node
 odt2txt
 pandoc
+parallel
 patchutils
 pgformatter
 postgresql
