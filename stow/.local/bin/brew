@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 # Wrapper for `brew` that ensures PATH and MANPATH are correct.
 

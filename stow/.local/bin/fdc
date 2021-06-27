@@ -5,7 +5,7 @@
 # if no dir given, use current dir
 dir=$1; [[ -e "$dir" ]] || dir=$PWD
 
-osascript <<EOF
+osascript <<-EOF
 set thePath to POSIX file "$dir" as alias
 tell application "Finder"
 	activate

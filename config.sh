@@ -49,9 +49,7 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 # unhide library folder in finder
 chflags nohidden ~/Library
 
-# only if allowed to use sudo
 if groups | grep -wq admin; then
-
     # disable boot sound
     sudo nvram SystemAudioVolume=" "
 
@@ -63,13 +61,8 @@ if groups | grep -wq admin; then
 
     # add brew installed shells to system
     if ! grep -q /usr/local/bin /etc/shells; then
-        {
-            echo "/usr/local/bin/bash"
-            echo "/usr/local/bin/zsh"
-        } | sudo tee -a /etc/shells
+        printf "%s\n" /usr/local/bin/{bash,zsh} | sudo tee -a /etc/shells >/dev/null
     fi
-
 fi
 
-# change shell to zsh
 [[ ${SHELL##*/} = zsh ]] || chsh -s /usr/local/bin/zsh
