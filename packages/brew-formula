@@ -26,6 +26,7 @@ git-delta
 git-gui
 gnupg
 go
+gron
 heroku
 highlight
 imagemagick
@@ -55,7 +56,7 @@ redis
 renameutils
 ripgrep
 ruby
-rust
+rust-analyzer
 shellcheck
 shfmt
 socat

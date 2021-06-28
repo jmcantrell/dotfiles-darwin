@@ -24,8 +24,7 @@
 
 # Since path_helper takes the current value into account,
 # unset PATH and MANPATH first to get the default value.
-export PATH=
-export MANPATH=
+unset PATH MANPATH
 
 # Takes values from /etc/paths and /etc/paths.d/*
 eval "$(/usr/libexec/path_helper -s)"
