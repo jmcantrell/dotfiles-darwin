@@ -4,7 +4,7 @@
 
 # If system tools like coreutils are overridden in the current shell,
 # homebrew will not have access to the expected versions, and some
-# builds will supposedly fail.
+# builds will fail.
 
 # The BSD coreutils that ship with MacOS are somewhat different from GNU
 # coreutils. Homebrew installs them in /usr/local/bin with a "g" prefix.
@@ -24,9 +24,7 @@
 
 # Since path_helper takes the current value into account,
 # unset PATH and MANPATH first to get the default value.
+
 unset PATH MANPATH
-
-# Takes values from /etc/paths and /etc/paths.d/*
-eval "$(/usr/libexec/path_helper -s)"
-
-/usr/local/bin/brew "$@"
+. /etc/profile
+exec brew "$@"
