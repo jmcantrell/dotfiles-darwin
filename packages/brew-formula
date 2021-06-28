@@ -6,16 +6,13 @@ bash
 bash-completion
 bat
 certbot
-colordiff
 coreutils
 ctags
 dateutils
-deno
 direnv
 djvulibre
 docker
 entr
-exa
 exiftool
 ffmpeg
 ffmpegthumbnailer
@@ -23,10 +20,8 @@ findutils
 fswatch
 gawk
 ghc
-ghostscript
 gifsicle
 git
-git-archive-all
 git-delta
 git-gui
 gnupg
@@ -36,12 +31,10 @@ highlight
 imagemagick
 jq
 libcaca
-lua
 markdown
 mediainfo
 mkcert
 mkvtoolnix
-mongodb-community
 moreutils
 neovim
 newsboat
@@ -77,6 +70,5 @@ watch
 weechat
 wget
 xmlstarlet
-yank
 zsh
 zsh-completions

@@ -2,8 +2,8 @@
 
 # Opens the current (or given) directory in finder.
 
-# if no dir given, use current dir
-dir=$1; [[ -e "$dir" ]] || dir=$PWD
+dir=$1
+[[ -e "$dir" ]] || dir=$PWD
 
 osascript <<-EOF
 set thePath to POSIX file "$dir" as alias

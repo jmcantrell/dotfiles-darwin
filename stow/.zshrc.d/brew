@@ -1,4 +1,4 @@
-HELPDIR=/usr/local/share/zsh/help
+HELPDIR=$(brew --prefix)/share/zsh/help
 export HELPDIR
 
 # vi:ft=sh
