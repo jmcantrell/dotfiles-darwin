@@ -1,4 +1,4 @@
-# dotfiles-macos
+# dotfiles-darwin
 
 My configuration files and scripts for Mac OS.
 
@@ -7,8 +7,8 @@ My configuration files and scripts for Mac OS.
 Clone this repository:
 
 ```
-$ git clone https://github.com/jmcantrell/dotfiles-macos.git ~/.dotfiles-macos
-$ cd ~/.dotfiles-macos
+$ git clone https://github.com/jmcantrell/dotfiles-darwin.git ~/.dotfiles-darwin
+$ cd ~/.dotfiles-darwin
 ```
 
 Initialize (or later, update) the submodules:
