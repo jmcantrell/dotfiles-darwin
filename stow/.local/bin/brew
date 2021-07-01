@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 # Wrapper for `brew` that ensures PATH and MANPATH are correct.
 
@@ -24,6 +24,8 @@
 
 # Since path_helper takes the current value into account,
 # unset PATH and MANPATH first to get the default value.
+
+set -euo pipefail
 
 unset PATH MANPATH
 . /etc/profile

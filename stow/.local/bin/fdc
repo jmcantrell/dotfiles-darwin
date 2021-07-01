@@ -2,6 +2,8 @@
 
 # Opens the current (or given) directory in finder.
 
+set -euo pipefail
+
 dir=$1
 [[ -e "$dir" ]] || dir=$PWD
 

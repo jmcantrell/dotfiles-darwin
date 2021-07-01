@@ -1,4 +1,6 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
+
+set -euo pipefail
 
 # Ensure the default coreutils are used.
 export PATH=/usr/bin:$PATH
