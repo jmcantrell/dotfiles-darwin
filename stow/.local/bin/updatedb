@@ -5,4 +5,4 @@ set -euo pipefail
 # Ensure the default coreutils are used.
 export PATH=/usr/bin:$PATH
 
-sudo /usr/libexec/locate.updatedb
+/usr/libexec/locate.updatedb
