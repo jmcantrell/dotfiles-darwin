@@ -1,4 +1,0 @@
-FZF_SHELL_DIR=$(brew --prefix)/opt/fzf/shell
-export FZF_SHELL_DIR
-
-# vi:ft=sh

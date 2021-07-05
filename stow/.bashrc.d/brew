@@ -1,3 +1,5 @@
-. "$(brew --prefix)"/etc/bash_completion
+[[ -d $BREW_PREFIX ]] || return 0
+
+. "$BREW_PREFIX"/etc/bash_completion
 
 # vi:ft=sh

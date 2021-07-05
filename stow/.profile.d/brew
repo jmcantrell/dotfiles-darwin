@@ -1,25 +1,6 @@
-brew=$(brew --prefix)
+which brew &>/dev/null || return 0
 
-export MANPATH=$brew/share/man:$MANPATH
-
-export FPATH=$brew/share/zsh-completions:$FPATH
-
-# Prefer gnu coreutils.
-export PATH=$brew/opt/coreutils/libexec/gnubin:$PATH
-export MANPATH=$brew/opt/coreutils/libexec/gnuman:$MANPATH
-
-# Prefer gnu sed.
-export PATH=$brew/opt/gnu-sed/libexec/gnubin:$PATH
-export MANPATH=$brew/opt/gnu-sed/libexec/gnuman:$MANPATH
-
-# Unversioned symlinks for python tools.
-export PATH=$brew/opt/python/libexec/bin:$PATH
-
-# Tell compilers where to find openssl.
-export LDFLAGS="-L/usr/local/opt/openssl/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl/include"
-export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
-
-unset brew
+BREW_PREFIX=$(brew --prefix)
+export BREW_PREFIX
 
 # vi:ft=sh
