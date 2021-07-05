@@ -32,6 +32,7 @@ imagemagick
 jq
 just
 libcaca
+libjpeg
 markdown
 mediainfo
 mkcert
@@ -41,6 +42,7 @@ neovim
 newsboat
 node
 odt2txt
+optipng
 pandoc
 parallel
 patchutils
