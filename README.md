@@ -7,7 +7,7 @@ My configuration files and scripts for Mac OS.
 Clone this repository:
 
 ```
-$ git clone git@github.com:jmcantrell/dotfiles-darwin.git ~/.dotfiles-darwin
+$ git clone git@gitlab.com:jmcantrell/dotfiles-darwin.git ~/.dotfiles-darwin
 $ cd ~/.dotfiles-darwin
 ```
 
