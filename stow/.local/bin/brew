@@ -9,8 +9,6 @@
 # This tries to decontaminate the environment by restoring PATH to the default
 # system state.
 
-set -e
-
 unset PATH
 . /etc/profile
 exec brew "$@"
