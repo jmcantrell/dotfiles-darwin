@@ -30,7 +30,6 @@ heroku
 highlight
 imagemagick
 jq
-just
 libcaca
 libjpeg
 markdown
@@ -44,7 +43,6 @@ node
 odt2txt
 optipng
 pandoc
-parallel
 patchutils
 pgformatter
 postgresql
