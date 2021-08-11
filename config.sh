@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
+set -eu
 
 # screensaver settings
 defaults write com.apple.screensaver askForPassword -int 1

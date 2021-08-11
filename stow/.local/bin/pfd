@@ -2,7 +2,7 @@
 
 # Gives the current directory in finder.
 
-set -euo pipefail
+set -eu
 
 dir=$(
     osascript <<EOF
