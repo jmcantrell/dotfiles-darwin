@@ -15,6 +15,8 @@ set result to POSIX path of the srcFolder as string
 EOF
 )
 
-[[ -d $dir ]] || dir=$HOME
+if [[ ! -d $dir ]]; then
+    dir=$HOME
+fi
 
 echo "${dir%%/}"
