@@ -11,7 +11,7 @@ git clone git@gitlab.com:jmcantrell/dotfiles-darwin.git ~/.dotfiles-darwin
 cd ~/.dotfiles-darwin
 ```
 
-Initialize repository, symlink files, install packages, and configure system:
+Symlink files, install packages, and configure system:
 
 ```sh
 ./scripts/stow
