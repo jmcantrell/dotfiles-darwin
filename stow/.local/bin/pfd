@@ -19,4 +19,4 @@ if [[ ! -d $dir ]]; then
     dir=$HOME
 fi
 
-echo "${dir%%/}"
+printf "%s\n" "${dir%%/}"
