@@ -6,37 +6,27 @@ My configuration files and scripts for Mac OS.
 
 Clone this repository:
 
-```
-$ git clone git@gitlab.com:jmcantrell/dotfiles-darwin.git ~/.dotfiles-darwin
-$ cd ~/.dotfiles-darwin
-```
-
-Update the repository:
-
-```
-$ ./update.sh
+```sh
+git clone git@gitlab.com:jmcantrell/dotfiles-darwin.git ~/.dotfiles-darwin
+cd ~/.dotfiles-darwin
 ```
 
-Install packages:
+Initialize repository, symlink files, install packages, and configure system:
 
-```
-$ ./install.sh
-```
-
-Configure the system:
-
-```
-$ ./config.sh
+```sh
+./scripts/stow
+./scripts/install
+./scripts/config
 ```
 
-Stow the files to your home directory:
+Update repository with the latest changes:
 
-```
-$ ./stow.sh
+```sh
+./scripts/update
 ```
 
-Remove the stowed files from your home directory:
+Remove files from home directory:
 
-```
-$ ./unstow.sh
+```sh
+./scripts/unstow
 ```
