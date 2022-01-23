@@ -16,7 +16,6 @@ docker
 entr
 exiftool
 ffmpeg
-ffmpegthumbnailer
 findutils
 fswatch
 gawk
@@ -39,7 +38,6 @@ mkcert
 mkvtoolnix
 moreutils
 neovim
-newsboat
 node
 odt2txt
 optipng
