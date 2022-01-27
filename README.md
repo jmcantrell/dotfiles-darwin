@@ -11,11 +11,11 @@ git clone git@gitlab.com:jmcantrell/dotfiles-darwin.git ~/.dotfiles-darwin
 cd ~/.dotfiles-darwin
 ```
 
-Symlink files, install packages, and configure system:
+Install packages, symlink files, and configure system:
 
 ```sh
-./scripts/stow
 ./scripts/install
+./scripts/stow
 ./scripts/config
 ```
 
