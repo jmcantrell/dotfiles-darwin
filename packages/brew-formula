@@ -40,6 +40,7 @@ moreutils
 neovim
 node
 odt2txt
+openssl
 optipng
 pandoc
 patchutils
@@ -60,6 +61,7 @@ shellcheck
 shfmt
 socat
 sqlite
+sqlite3
 stow
 tldr
 tmux
@@ -70,5 +72,7 @@ watch
 weechat
 wget
 xmlstarlet
+xz
+zlib
 zsh
 zsh-completions
