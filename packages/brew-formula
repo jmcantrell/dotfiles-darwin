@@ -15,6 +15,7 @@ djvulibre
 docker
 entr
 exiftool
+fd
 ffmpeg
 findutils
 fswatch
