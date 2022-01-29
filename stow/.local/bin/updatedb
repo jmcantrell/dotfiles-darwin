@@ -3,6 +3,7 @@
 set -eu
 
 # Ensure the default coreutils are used.
-export PATH=/usr/bin:$PATH
+unset PATH
+. /etc/profile
 
 /usr/libexec/locate.updatedb

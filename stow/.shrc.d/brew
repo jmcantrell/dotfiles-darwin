@@ -1,4 +1,4 @@
-[[ -d $BREW_PREFIX ]] || return 0
+[[ -v BREW_PREFIX ]] || return 0
 
 export MANPATH=$BREW_PREFIX/share/man:$MANPATH
 

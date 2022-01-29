@@ -1,4 +1,4 @@
-which brew &>/dev/null || return 0
+which brew >/dev/null || return 0
 
 BREW_PREFIX=$(brew --prefix)
 export BREW_PREFIX
