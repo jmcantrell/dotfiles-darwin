@@ -1,5 +1,4 @@
 # Change directory to current folder in finder.
-
 cdf() {
 	cd "$(pfd)" || return 0
 }

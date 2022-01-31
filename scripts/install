@@ -10,5 +10,5 @@ if ! which brew >/dev/null; then
     curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install | ruby
 fi
 
-xargs -r brew install <./packages/brew-formula
-xargs -r brew install --cask <./packages/brew-cask
+xargs -r brew install <./packages/formulae
+xargs -r brew install --cask <./packages/casks
