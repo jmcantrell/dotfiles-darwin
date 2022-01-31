@@ -1,5 +1,5 @@
-if [[ -d $BREW_PREFIX ]]; then
-    . "$BREW_PREFIX"/etc/bash_completion
-fi
+[[ -v BREW_PREFIX ]] || return 0
+
+. "$BREW_PREFIX"/etc/bash_completion
 
 # vi:ft=sh

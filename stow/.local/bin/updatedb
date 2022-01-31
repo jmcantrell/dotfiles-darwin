@@ -1,9 +1,15 @@
 #!/usr/bin/env bash
 
-set -eu
+# Interface to darwin's `updatedb` that ensures PATH overrides are cleared.
 
-# Ensure the default coreutils are used.
+# If system tools like coreutils are overridden in the current shell, homebrew
+# will not have access to the expected versions, and could cause some actions to
+# fail or have unexpected behavior.
+
+# This tries to decontaminate the environment by restoring PATH to the default
+# system state.
+
 unset PATH
 . /etc/profile
 
-/usr/libexec/locate.updatedb
+/usr/libexec/locate.updatedb "$@"

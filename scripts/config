@@ -7,7 +7,7 @@ defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -float 0.0
 
 # screenshot settings
-defaults write com.apple.screencapture location "$HOME"
+defaults write com.apple.screencapture location ~
 defaults write com.apple.screencapture disable-shadow -bool true
 
 # trackpad settings
@@ -65,4 +65,4 @@ if groups | grep -wq admin; then
     fi
 fi
 
-[[ ${SHELL##*/} = zsh ]] || chsh -s /usr/local/bin/zsh
+chsh -s /usr/local/bin/zsh

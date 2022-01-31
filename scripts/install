@@ -2,10 +2,13 @@
 
 set -eu
 
-which gcc &>/dev/null || xcode-select --install
+if ! which gcc >/dev/null; then
+    xcode-select --install
+fi
 
-url=https://raw.githubusercontent.com/Homebrew/install/master/install
-which brew &>/dev/null || ruby -e "$(curl -fsSL "$url")"
+if ! which brew >/dev/null; then
+    curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install | ruby
+fi
 
 xargs -r brew install <./packages/brew-formula
 xargs -r brew install --cask <./packages/brew-cask
