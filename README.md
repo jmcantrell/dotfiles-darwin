@@ -4,13 +4,6 @@ My configuration files and scripts for Mac OS.
 
 ## Installation
 
-Clone this repository:
-
-```sh
-git clone git@gitlab.com:jmcantrell/dotfiles-darwin.git ~/.dotfiles-darwin
-cd ~/.dotfiles-darwin
-```
-
 Install packages, symlink files, and configure system:
 
 ```sh
@@ -18,6 +11,8 @@ Install packages, symlink files, and configure system:
 ./scripts/stow
 ./scripts/config
 ```
+
+## Additional tasks
 
 Update repository with the latest changes:
 
