@@ -20,7 +20,6 @@ ffmpeg
 findutils
 fswatch
 gawk
-ghc
 gifsicle
 git
 git-gui
@@ -39,7 +38,6 @@ mkcert
 mkvtoolnix
 moreutils
 neovim
-node
 odt2txt
 openssl
 optipng
