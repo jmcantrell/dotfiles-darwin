@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Gives the current directory in finder.
+# Print the current directory of the front-most finder window.
 
 set -eu
 
@@ -15,8 +15,4 @@ set result to POSIX path of the srcFolder as string
 EOF
 )
 
-if [[ ! -d $dir ]]; then
-    dir=$HOME
-fi
-
-printf "%s\n" "${dir%%/}"
+printf "${dir%%/}"

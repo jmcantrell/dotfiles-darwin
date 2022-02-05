@@ -25,7 +25,6 @@ git-gui
 gnupg
 go
 gron
-heroku
 highlight
 imagemagick
 jq
@@ -44,8 +43,8 @@ pandoc
 patchutils
 pgformatter
 postgresql
+postgrest
 pstree
-qemu
 qrencode
 ranger
 readline
@@ -53,7 +52,6 @@ recode
 redis
 renameutils
 ripgrep
-ruby
 rust-analyzer
 shellcheck
 shfmt

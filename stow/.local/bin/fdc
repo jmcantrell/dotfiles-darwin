@@ -4,14 +4,8 @@
 
 set -eu
 
-path=$1
-
-if [[ ! -e $path ]]; then
-    path=$PWD
-fi
-
 osascript <<-EOF
-set thePath to POSIX file "$path" as alias
+set thePath to POSIX file "${1:-$PWD}" as alias
 tell application "Finder"
 	activate
 	try

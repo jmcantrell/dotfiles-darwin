@@ -60,10 +60,10 @@ if groups | grep -wq admin; then
     sudo pmset -c displaysleep 15
 
     # Add brew installed shells to system.
-    for shell in bash zsh; do
-        bin=/usr/local/bin/$shell
-        if ! grep -q "$bin" /etc/shells; then
-            echo "$bin" | sudo tee -a /etc/shells >/dev/null
+    for name in bash zsh; do
+        path=/usr/local/bin/$name
+        if ! grep -q "$path" /etc/shells; then
+            echo "$path" | sudo tee -a /etc/shells >/dev/null
         fi
     done
 fi
