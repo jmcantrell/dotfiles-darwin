@@ -41,6 +41,7 @@ odt2txt
 openssl
 optipng
 pandoc
+pass
 patchutils
 pgformatter
 postgresql
