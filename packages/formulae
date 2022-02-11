@@ -45,7 +45,6 @@ pass
 patchutils
 pgformatter
 postgresql
-postgrest
 pstree
 qrencode
 ranger
