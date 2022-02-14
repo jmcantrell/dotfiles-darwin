@@ -6,10 +6,4 @@
 # will not have access to the expected versions, and could cause some actions to
 # fail or have unexpected behavior.
 
-# This tries to decontaminate the environment by restoring PATH to the default
-# system state.
-
-unset PATH
-. /etc/profile
-
-exec brew "$@"
+exec with-default-path brew "$@"

@@ -6,10 +6,4 @@
 # will not have access to the expected versions, and could cause some actions to
 # fail or have unexpected behavior.
 
-# This tries to decontaminate the environment by restoring PATH to the default
-# system state.
-
-unset PATH
-. /etc/profile
-
-/usr/libexec/locate.updatedb "$@"
+exec with-default-path /usr/libexec/locate.updatedb "$@"
