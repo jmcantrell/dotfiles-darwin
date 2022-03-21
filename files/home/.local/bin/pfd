@@ -5,14 +5,14 @@
 set -eu
 
 dir=$(
-	osascript <<-EOF
-		try
-			tell application "Finder" to set srcFolder to folder of the front window as alias
-		on error
-			set srcFolder to path to desktop folder as alias
-		end try
-		set result to POSIX path of the srcFolder as string
-	EOF
+    osascript <<-EOF
+try
+    tell application "Finder" to set srcFolder to folder of the front window as alias
+on error
+    set srcFolder to path to desktop folder as alias
+end try
+set result to POSIX path of the srcFolder as string
+EOF
 )
 
 printf "${dir%%/}"

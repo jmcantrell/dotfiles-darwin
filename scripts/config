@@ -50,22 +50,22 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 chflags nohidden ~/Library
 
 if groups | grep -wq admin; then
-	# Disable boot sound.
-	sudo nvram SystemAudioVolume=%80
+    # Disable boot sound.
+    sudo nvram SystemAudioVolume=%80
 
-	# power management settings
-	sudo pmset -b sleep 1
-	sudo pmset -c sleep 15
-	sudo pmset -b displaysleep 1
-	sudo pmset -c displaysleep 15
+    # power management settings
+    sudo pmset -b sleep 1
+    sudo pmset -c sleep 15
+    sudo pmset -b displaysleep 1
+    sudo pmset -c displaysleep 15
 
-	# Add brew installed shells to system.
-	for name in bash zsh; do
-		path=/usr/local/bin/$name
-		if ! grep -q "$path" /etc/shells; then
-			echo "$path" | sudo tee -a /etc/shells >/dev/null
-		fi
-	done
+    # Add brew installed shells to system.
+    for name in bash zsh; do
+        path=/usr/local/bin/$name
+        if ! grep -q "$path" /etc/shells; then
+            echo "$path" | sudo tee -a /etc/shells >/dev/null
+        fi
+    done
 fi
 
 chsh -s /usr/local/bin/zsh
