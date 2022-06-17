@@ -2,6 +2,7 @@
 
 set -eu
 
+# Install command-line tools.
 if [[ ! -x /usr/bin/gcc ]]; then
     xcode-select --install
 fi
