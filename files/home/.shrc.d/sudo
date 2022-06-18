@@ -1,0 +1,3 @@
+alias V='sudo -e'
+
+# vi:ft=sh
