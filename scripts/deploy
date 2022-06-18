@@ -2,4 +2,8 @@
 
 set -eu
 
+temp_dir=$HOME/.local/tmp
+mkdir -p "$temp_dir"
+chmod 700 "$temp_dir"
+
 stow --no-folding --dir ./files --target ~ --restow home
