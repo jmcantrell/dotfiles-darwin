@@ -46,6 +46,7 @@ patchutils
 pgformatter
 postgresql
 pstree
+pv
 qrencode
 ranger
 readline
