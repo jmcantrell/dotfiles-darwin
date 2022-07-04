@@ -1,4 +1,0 @@
-# Aliases after sudo cannot be completed without this.
-alias sudo='sudo '
-
-# vi:ft=sh
