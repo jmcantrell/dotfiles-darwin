@@ -1,3 +1,0 @@
-export DIRENV_BIN=/usr/local/bin/direnv
-
-# vi:ft=sh
