@@ -5,13 +5,13 @@
 set -eu
 
 osascript <<-EOF
-	set thePath to POSIX file "${1:-$PWD}" as alias
-	tell application "Finder"
-	    activate
-	    try
-	        set the folder of the front window to thePath
-	    on error
-	        open thePath
-	    end try
-	end tell
+set thePath to POSIX file "${1:-$PWD}" as alias
+tell application "Finder"
+    activate
+    try
+        set the folder of the front window to thePath
+    on error
+        open thePath
+    end try
+end tell
 EOF
