@@ -57,7 +57,7 @@ if groups | grep -wq admin; then
     for name in bash zsh; do
         path=/usr/local/bin/$name
         if ! grep -q "$path" /etc/shells; then
-            echo "$path" | sudo tee -a /etc/shells >/dev/null
+            sudo tee -a /etc/shells >/dev/null <<<"$path"
         fi
     done
 fi
