@@ -63,3 +63,7 @@ if groups | grep -wq admin; then
 fi
 
 chsh -s /usr/local/bin/zsh
+
+temp_dir=$HOME/.local/tmp
+mkdir -p "$temp_dir"
+chmod 700 "$temp_dir"
