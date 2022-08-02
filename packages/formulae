@@ -5,6 +5,7 @@ atool
 bash
 bash-completion
 bat
+btop
 certbot
 coreutils
 ctags
