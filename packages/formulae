@@ -44,6 +44,7 @@ moreutils
 mtr
 neovim
 netcat
+newsboat
 ngrep
 odt2txt
 openssl
@@ -53,6 +54,7 @@ pass
 patchutils
 pgformatter
 postgresql
+progress
 pstree
 pv
 pwgen
