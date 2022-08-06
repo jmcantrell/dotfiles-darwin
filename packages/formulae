@@ -89,6 +89,7 @@ weechat
 wget
 xmlstarlet
 xz
+yq
 zlib
 zsh
 zsh-completions
