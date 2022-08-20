@@ -47,7 +47,6 @@ mkcert
 mkvtoolnix
 moreutils
 mtr
-neovim
 netcat
 newsboat
 ngrep
@@ -88,6 +87,7 @@ tmux
 transmission-cli
 trash
 tree
+vim
 watch
 websocat
 weechat
