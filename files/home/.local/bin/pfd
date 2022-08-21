@@ -15,4 +15,4 @@ set result to POSIX path of the srcFolder as string
 EOF
 )
 
-printf "${dir%%/}"
+printf "%s\n" "${dir%%/}"
