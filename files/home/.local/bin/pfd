@@ -2,7 +2,7 @@
 
 # Print the current directory of the front-most finder window.
 
-set -eu
+set -euo pipefail
 
 dir=$(
     osascript <<-EOF
