@@ -1,6 +1,8 @@
 # Change directory to current folder in finder.
 cdf() {
-    cd "$(pfd)" || return 0
+    local dir
+    dir=$(pfd) || return 1
+    cd "$dir" || return 1
 }
 
 # vi:ft=sh
