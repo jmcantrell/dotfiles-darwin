@@ -1,15 +1,15 @@
-export MANPATH=/usr/local/share/man:"$MANPATH"
+export MANPATH=/usr/local/share/man:$MANPATH
 
 # Prefer gnu coreutils.
-export PATH=/usr/local/opt/coreutils/libexec/gnubin:"$PATH"
-export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:"$MANPATH"
+export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
+export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
 
 # Prefer gnu sed.
-export PATH=/usr/local/opt/gnu-sed/libexec/gnubin:"$PATH"
-export MANPATH=/usr/local/opt/gnu-sed/libexec/gnuman:"$MANPATH"
+export PATH=/usr/local/opt/gnu-sed/libexec/gnubin:$PATH
+export MANPATH=/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH
 
 # Unversioned symlinks for python tools.
-export PATH=/usr/local/opt/python/libexec/bin:"$PATH"
+export PATH=/usr/local/opt/python/libexec/bin:$PATH
 
 # Tell compilers where to find openssl.
 export LDFLAGS=-L/usr/local/opt/openssl/lib
