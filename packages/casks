@@ -4,7 +4,6 @@ chromium
 docker
 firefox
 inkscape
-ipfs
 mactex
 mpv
 pgadmin4
@@ -13,6 +12,4 @@ simple-comic
 the-unarchiver
 tor-browser
 transmission
-virtualbox
-virtualbox-extension-pack
 wireshark

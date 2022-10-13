@@ -1,8 +1,4 @@
 # Change directory to current folder in finder.
-cdf() {
-    local dir
-    dir=$(pfd) || return 1
-    cd "$dir" || return 1
-}
+alias cdf='cd "$(pfd)"'
 
 # vi:ft=sh

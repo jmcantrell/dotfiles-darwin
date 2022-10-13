@@ -5,7 +5,7 @@
 set -euo pipefail
 
 dir=$(
-    osascript <<-EOF
+    osascript <<EOF
 try
     tell application "Finder" to set srcFolder to folder of the front window as alias
 on error
