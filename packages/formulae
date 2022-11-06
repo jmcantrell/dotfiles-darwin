@@ -78,6 +78,7 @@ sipcalc
 socat
 sqlite
 sqlite3
+sshfs
 stow
 stunnel
 tcpdump
