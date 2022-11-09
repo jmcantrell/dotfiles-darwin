@@ -1,3 +1,3 @@
-source /usr/local/etc/bash_completion
+. /usr/local/etc/bash_completion
 
-# vi:ft=bash
+# vi:ft=sh
