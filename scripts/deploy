@@ -4,3 +4,5 @@ set -euo pipefail
 
 printf "Stowing package: %q\n" "$PWD/files/home"
 stow --no-folding --dir ./files --target ~ --restow home
+
+ln -vsfrn ~/.config/qutebrowser/autoconfig.yml ~/Library/Preferences/qutebrowser/autoconfig.yml
