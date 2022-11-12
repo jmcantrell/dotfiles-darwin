@@ -1,8 +1,19 @@
 #!/usr/bin/env bash
 
 set -euo pipefail
+shopt -s nullglob globstar
 
 printf "Stowing package: %q\n" "$PWD/files/home"
 stow --no-folding --dir ./files --target ~ --restow home
 
 ln -vsfrn ~/.config/qutebrowser/autoconfig.yml ~/Library/Preferences/qutebrowser/autoconfig.yml
+
+mkdir -p ~/.qutebrowser
+ln -vsfrn ~/.config/qutebrowser/quickmarks ~/.qutebrowser/quickmarks
+
+for fromfile in ~/.local/share/qutebrowser/**; do
+    [[ -f $fromfile ]] || continue
+    tofile="$HOME/Library/Application Support/qutebrowser/${fromfile#*/qutebrowser/}"
+    mkdir -p "$(dirname "$tofile")"
+    ln -vsfrn "$fromfile" "$tofile"
+done
