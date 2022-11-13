@@ -10,6 +10,7 @@ bat
 btop
 cabal-install
 certbot
+clang-format
 coreutils
 ctags
 dateutils
