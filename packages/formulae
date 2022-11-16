@@ -15,6 +15,7 @@ coreutils
 ctags
 dateutils
 dhcping
+dict
 direnv
 djvulibre
 docker
