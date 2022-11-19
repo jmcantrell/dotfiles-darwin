@@ -7,6 +7,7 @@ autoconf
 bash
 bash-completion
 bat
+binaryen
 btop
 cabal-install
 certbot
