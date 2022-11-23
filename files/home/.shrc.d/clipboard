@@ -1,0 +1,4 @@
+alias cbi=pbcopy
+alias cbo=pbpaste
+
+# vi:ft=sh
