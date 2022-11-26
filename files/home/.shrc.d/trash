@@ -1,0 +1,5 @@
+alias t='trash -v'
+alias tls='trash -vl'
+alias te='trash -e'
+
+# vi:ft=sh
