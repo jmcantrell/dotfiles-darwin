@@ -25,7 +25,6 @@ exiftool
 fd
 ffmpeg
 findutils
-fq
 fswatch
 gawk
 ghc
@@ -96,6 +95,7 @@ transmission-cli
 trash
 tree
 vim
+wader/tap/fq
 wasm-pack
 watch
 websocat
