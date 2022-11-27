@@ -25,6 +25,7 @@ exiftool
 fd
 ffmpeg
 findutils
+fq
 fswatch
 gawk
 ghc
