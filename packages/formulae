@@ -65,6 +65,7 @@ pass
 patchutils
 pgformatter
 postgresql
+prettier
 progress
 pstree
 pv
@@ -81,6 +82,7 @@ shellcheck
 shfmt
 sipcalc
 socat
+sqlfluff
 sqlite
 sqlite3
 sshfs
@@ -95,6 +97,7 @@ transmission-cli
 trash
 tree
 vim
+vint
 wader/tap/fq
 wasm-pack
 watch
@@ -103,6 +106,7 @@ weechat
 wget
 xmlstarlet
 xz
+yamllint
 yq
 zlib
 zsh
